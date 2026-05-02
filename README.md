@@ -1,6 +1,6 @@
-# Frontend Monorepo — Interview Q&A (Mid & Senior)
+# Frontend Monorepo
 
-A study guide for **mid-level** and **senior** frontend interviews focused on **JavaScript/TypeScript monorepos**: workspaces, task runners, caching, boundaries, CI, and real failure modes.
+A study guide for frontend interviews focused on **JavaScript/TypeScript monorepos**: workspaces, task runners, caching, boundaries, CI, and real failure modes.
 
 **Configs & code:** the section [Reference: layout and minimal config (code)](#reference-layout-and-minimal-config-code) has copy-paste **`package.json`**, **`turbo.json`**, **Vite / Next / Jest / Vitest**, **Pinia**, **Angular paths**, and **Module Federation** sketches. Other chapters point back to it as **Reference** so narrative and snippets stay in sync.
 
