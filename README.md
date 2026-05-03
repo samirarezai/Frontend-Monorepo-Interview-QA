@@ -450,7 +450,7 @@ export default [
 
 **A:** Packages only see **declared dependencies** (plus their own subtree), not everything hoisted to the root. That surfaces missing declarations early - **good for correctness** - but can require fixing undeclared deps when migrating from npm/Yarn classic.
 
-**Senior:** `public-hoist-pattern` / `shamefully-hoist` are **escape hatches** for broken tooling; prefer fixing the tool or dependency over permanent hoisting unless necessary.
+**Senior:** pnpm’s layout is **stricter** than npm’s flat tree. A few tools still assume “everything is visible from everywhere” and then break. **`public-hoist-pattern`** lifts only the package names you list to a flatter place. **`shamefully-hoist`** lifts much more (almost like npm) so stubborn tools can find deps. Use either to **unblock** a bad interaction, but treat it as a **workaround**: upgrade or patch the tool, or fix missing declarations, instead of leaving hoisting on forever.
 
 ---
 
